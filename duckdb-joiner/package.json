@@ -1,0 +1,32 @@
+{
+  "name": "duckdb-joiner",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "verify:sql": "node scripts/verify-sql.mjs",
+    "verify:wasm": "node scripts/verify-wasm.mjs",
+    "verify:diag": "node scripts/verify-diagnostics.mjs",
+    "test:parser": "node scripts/test-parser.mjs",
+    "verify:all": "npm run test:parser && npm run verify:sql && npm run verify:wasm && npm run verify:diag",
+    "e2e": "node scripts/e2e.mjs"
+  },
+  "dependencies": {
+    "@duckdb/duckdb-wasm": "^1.29.0",
+    "monaco-editor": "^0.52.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "duckdb": "^1.4.4",
+    "playwright": "^1.63.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.8"
+  }
+}

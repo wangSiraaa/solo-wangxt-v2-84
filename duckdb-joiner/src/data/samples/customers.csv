@@ -1,0 +1,6 @@
+customer_id,name,region,email
+001,张伟,华东,zhang@example.com
+002,李娜,华北,""
+003,王强,华南,
+004,赵敏,华东,zhao@example.com
+005,陈杰,西南,chen@example.com
